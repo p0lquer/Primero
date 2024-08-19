@@ -1,126 +1,144 @@
-*{
-    padding: 0%;
-    margin: 0%;
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body {
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Times, serif;
-    font-size: medium;
-}
+
 html {
-   font-size: 1rem;
-   box-sizing: border-box;
+    font-size: 16px; /* 1rem = 16px */
+}
 
+/* Tipografía general */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    background-color: #444;
+    color: #f5f5f5;
+    overflow-x: hidden;
+    margin-top: 80px;
+    padding: 20px;
 }
-header{
-        position: fixed;
-        top: 0%;
-        left: 0;
-        right: 0%;
-        background-color: #468189;
-        display: flex;
-        height: 80px;
-        align-items: center;
-        justify-content: start;
-}
-header img {
-    height: 140px;
-    margin-top: 5%;
-    border-radius: 100%;
 
-}
-header * {
-    display: inline;
-}
-ul a{
-    color: #233142;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5em;
+/* Estilos del header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #586562;
+    display: flex;
+    height: 55px;
+    align-items: center;
     justify-content: space-between;
-    justify-items: left;
-    margin: 15px;
+    padding: 0 20px;
 }
-h2{
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   font-size:larger;
-   margin: auto;
-    
+
+header img {
+    height: 45px;
+    border-radius: 50%;
 }
-.main{
-    text-align: center
+
+header nav a {
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    margin-right: 15px;
+    text-decoration: none;
 }
-.header{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    animation-direction:normal;
-    animation-timing-function: linear;
-    animation-duration: 1s;
-   animation-name: header ;
-   animation-iteration-count: initial;
-   font-size: 3em;
+
+/* Hover efecto en los links del header */
+header nav a:hover {
+    color: black;
+    text-decoration: underline;
 }
+
+/* Estilos de la cabecera animada */
+.header {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+    position: sticky;
+    margin-bottom: -1.5%;
+    animation: header 1s linear forwards;
+}
+
 @keyframes header {
-    0%{
-        transform:scale(0);
+    0% {
+        transform: scale(0);
     }
-    100%{
-        transform: scale(100%);
+    100% {
+        transform: scale(1);
     }
 }
 
-.bar{
-        list-style: none;
-        position: absolute;
-        justify-content: space-between;
-        left: 8rem;
-        color: white;
-        font-size: medium;
-        font-family:Arial, Helvetica, sans-serif;
+/* Estilo de los párrafos */
+p {
+    font-family: Arial, sans-serif;
+    font-size: 1.25rem;
 }
-body{
-    height: 125vh;
-    background-color: #031926;
-    color: white;
-    margin-top: 80px ;
-    padding: 20px;    
-}
-p{
-    font-style: sans;
-    font-weight: 75;
-    font-size: 1.5rem;
-}
-.img{
+
+/* Imágenes */
+.img {
     margin-bottom: 2rem;
     border-radius: 10%;
     width: 600px;
 }
-.presentacion{
-    padding: auto;
-    margin-top: 120px;
-}
-.img2{
+
+.img2 {
     border-radius: 10%;
     align-self: center;
 }
-.comenzemos{
-    padding: auto;
-    margin-top: 150px;
+
+/* Secciones */
+.presentacion, .comenzemos {
+    margin-top: 2rem;
+    padding: 1rem;
 }
-.seccion{
-    padding: 0%;
+
+.seccion {
     margin-bottom: 1rem;
 }
 
-#div{
+/* Sección de contacto */
+.contacto a {
+    color: whitesmoke;
+    margin: 2rem;
+    font-size: 2rem;
+}
+
+.contacto a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+/* Otros estilos */
+.fa {
+    left: 65rem;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+}
+
+#bajar {
+    cursor: pointer;
+}
+
+.bar {
+    list-style: none;
+    color: white;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#div {
     padding: 10px;
 }
-.contacto a{
-    color: #468189;
-    justify-content: space-between;
-    margin: 2rem;
-    padding: auto;
-    font-size: 2em;
 
-}
-.info { 
+.info {
     font-size: 1rem;
     font-weight: 100;
     font-family: Arial, Helvetica, sans-serif;
